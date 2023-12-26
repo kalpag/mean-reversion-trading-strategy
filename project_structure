@@ -1,0 +1,18 @@
+/mean_reversion_trading
+├── data
+│   ├── data_downloader.py
+│   └── preprocessing.py
+├── strategy
+│   ├── mean_reversion.py
+│   └── sentiment_analysis.py (future integration)
+├── backtesting
+│   └── backtester.py
+├── utils
+│   └── helpers.py
+├── tests
+│   ├── test_data_downloader.py
+│   ├── test_mean_reversion.py
+│   └── test_sentiment_analysis.py
+├── main.py
+└── README.md
+
