@@ -35,3 +35,41 @@
 |               |
 +---------------+
 
+Data Downloader:
+File: data/data_downloader.py
+Class: DataDownloader
+Methods:
+__init__(self, ticker, start_date, end_date)
+download_data(self)
+update_data(self)
+
+Data Preprocessor:
+File: data/preprocessing.py
+Class: DataPreprocessor
+Methods:
+__init__(self, data)
+clean_data(self)
+preprocess_data(self)
+Mean Reversion Strategy:
+
+File: strategy/mean_reversion.py
+Class: MeanReversionStrategy
+Methods:
+__init__(self, data)
+generate_signals(self, lookback_period=20, z_score_threshold=1.0)
+Backtester:
+
+File: backtesting/backtester.py
+Class: Backtester
+Methods:
+__init__(self, data, signals)
+conduct_backtest(self, initial_balance=100000)
+Helpers (Utility Functions):
+
+File: utils/helpers.py
+Function:
+calculate_sharpe_ratio(returns)
+Unit Tests:
+
+Files: tests/test_data_downloader.py, tests/test_preprocessing.py, 
+tests/test_mean_reversion.py, tests/test_backtester.py, tests/test_helpers.py
